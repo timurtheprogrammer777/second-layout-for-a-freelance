@@ -1,0 +1,201 @@
+//fonts start
+
+@font-face {
+    font-family: 'ebrima';
+    
+    src: url('../fonts/ebrima.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'forte';
+    
+    src: url('../fonts/forte.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'minion';
+    
+    src: url('../fonts/minionPro-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+//fonts end
+
+
+//common start
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'minion';
+    display: block;
+}
+
+
+a{  
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    li{
+        margin: 0;
+    }
+}
+
+ul{
+    padding: auto;
+    li{
+        margin-top: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+}
+
+.container{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+// common end
+
+//header start
+.header{
+    // margin-top: -16px;
+    padding-top: 10px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+.header__inner{
+    
+    nav{
+        margin-bottom: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__title{
+        text-align: start;
+        font-family: 'forte';
+        margin-bottom: 80px;
+        color: #000;
+        font-size: 48px;
+        font-weight: 500;
+        width: 40%;
+        position: relative;
+        z-index: 10; 
+        &::after{
+            content: '';
+            width: 830px;
+            height: 250px;
+            position: absolute;
+            background-image: url(../img/bg-blue.jpg.png);
+            top: -70px;
+            left: -70px;
+            z-index: -5;
+        }
+        
+
+    }
+    .header__subtitle{
+        width: 420px;
+        line-height: 20px;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .header__btn{
+        a{
+            font-size: 18px;
+            padding: 20px 40px;
+            background-color: #fff343;
+            color: #000;
+            border-radius: 4px;
+            transition: all .3s;
+            font-weight: 700;
+            border: 2px solid rgba(255, 255, 255, 0);
+        }
+        a:hover{
+            background-color: #e6e6e2;
+            border: 2px solid rgba(0, 0, 0, 9);
+        }
+    }
+    .header__logo__ul{
+        display: flex;
+        align-items: center;
+        li{
+            width: 150px;
+            margin-left: 10px;
+        }
+        img{
+            position: relative;
+            background-color: #fff;
+            padding: 13px 21px;
+            border-radius: 30px;
+            border: 2px solid #ffa481;
+            // &::after{
+            //     content: '123';
+            //     width: 10px;
+            //     height: 10px;
+            //     position: absolute;
+            //     top: 1;
+            //     left: 1;
+            //     background-color: #000;
+            //     padding: 20px 25px;
+            //     border-radius: 50%;
+            //     border: 1px solid #ffa481;
+            // }
+        }
+        .header__logo{    
+            font-size: 24px;
+            font-weight: 700;
+        }  
+    }
+    .header__menu__ul{
+        display: flex; 
+        li + li{
+            margin-left: 50px;
+        }
+        .header__links{
+            font-size: 24px;
+            font-weight: 700;
+            border-bottom: 2px solid rgba(255, 255, 255, 0);
+            transition: all .3s;
+            &:hover{
+                border-bottom: 2px solid  #000;
+            }
+            
+         }
+        
+    }
+}
+
+
+
+
+
+//header end
+
+//features start
+
+.features{
+    min-height: 1000px;
+}
+
+
+//features end
