@@ -7,7 +7,6 @@
     text-align: center;
 }
 
-
 //mixin end
 
 //fonts start
@@ -37,11 +36,10 @@
     font-display: swap;
 }
 
-
 //fonts end
 
-
 //common start
+
 html{
     box-sizing: border-box;
 }
@@ -57,8 +55,6 @@ body{
     font-size: 16px;
     font-weight: 400;
 }
-
-
 a{  
     padding: 0;
     color: inherit;
@@ -82,7 +78,6 @@ ul{
     padding: 0 10px;
     margin: 0 auto;
 }
-
 
 // common end
 
@@ -187,14 +182,9 @@ ul{
     }
 }
 
-
-
-
-
 //header end
 
 //features start
-
 
 .features {
     &__title {
@@ -228,33 +218,55 @@ ul{
     }
 }
 
-
-
-
 //features end
 
 //about start
 
 .about {
-}
-.about__inner {
-}
-.about__title {
-}
-.about__content {
-}
-.about__text {
-}
-.about__img {
+    background-image: url(../img/circles\ bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    padding: 75px 0;
+    margin-bottom: 80px;
+    &__title{
+        @include block-title;
 
+        margin-bottom: 80px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        &-text{
+            width: 40%;
+        }
+        &-img{
+            margin-top: -120px;
+            margin-left: -80px;
+        }
+    }
 }
+
 //about end
 
 //examples start
 
 .examples {
-}
-.examples__inner {
+    &__title{
+        @include block-title;
+
+        margin-bottom: 70px;
+    }
+    &__content{
+        &-item{
+            display: flex;
+            flex-wrap: wrap;
+            &-img{
+                width: 50%;
+            }
+        }
+    }
 }
 .examples__title {
 }
