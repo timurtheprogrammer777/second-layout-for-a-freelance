@@ -260,21 +260,31 @@ ul{
     }
     &__content{
         &-item{
-            display: flex !important;   
-            justify-content: space-between;   
-            flex-wrap: wrap;
-            width: 100% ;
-            height: 100%;
+            // width: 100%;
+            display: flex !important;
+            justify-content: space-around;
             margin: 0 auto;
-            &-img{
-                max-width: 48%; 
-                margin-top: 15px; 
+
+            col-1{
+                margin-right: 10px;
                 
-                        
             }
-            // &-img + &-img{
-            //     margin-left: 10px;
-            // }
+
+            col-2{
+                padding-left: 10px;
+            }
+
+            .examples__content-item-img{
+                margin-top: 20px;
+                img{
+                    width: 620px;
+                }
+                
+            }
+            .col + .col{
+                margin-left: 15px;
+            }
+           
         }
     }
 }
