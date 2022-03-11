@@ -260,11 +260,21 @@ ul{
     }
     &__content{
         &-item{
-            display: flex;
+            display: flex !important;   
+            justify-content: space-between;   
             flex-wrap: wrap;
+            width: 100% ;
+            height: 100%;
+            margin: 0 auto;
             &-img{
-                width: 50%;
+                max-width: 48%; 
+                margin-top: 15px; 
+                
+                        
             }
+            // &-img + &-img{
+            //     margin-left: 10px;
+            // }
         }
     }
 }
