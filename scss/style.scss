@@ -1,3 +1,15 @@
+//mixin start
+
+@mixin block-title{
+    font-family: 'ebrima', sans-serif  ;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+//mixin end
+
 //fonts start
 
 @font-face {
@@ -42,6 +54,8 @@ html{
 body{
     font-family: 'minion';
     display: block;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -74,7 +88,7 @@ ul{
 
 //header start
 .header{
-    // margin-top: -16px;
+    margin-bottom: 170px;
     padding-top: 10px;
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
@@ -181,9 +195,164 @@ ul{
 
 //features start
 
-.features{
-    min-height: 1000px;
+
+.features {
+    &__title {
+        @include block-title;
+
+        margin-bottom: 70px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            text-align: center;
+            transition: all .3s;
+            &-img{
+                margin-bottom: 25px;
+            }
+            &-t{
+                font-family: 'ebrima';
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+            &-st{
+                margin-bottom: 90px;
+                max-width: 190px;
+            }
+        }
+        &-item:hover{
+            transform: scale(1.1 , 1.1);
+        }
+    }
 }
 
 
+
+
 //features end
+
+//about start
+
+.about {
+}
+.about__inner {
+}
+.about__title {
+}
+.about__content {
+}
+.about__text {
+}
+.about__img {
+
+}
+//about end
+
+//examples start
+
+.examples {
+}
+.examples__inner {
+}
+.examples__title {
+}
+.examples__content {
+}
+.examples__content-item {
+}
+
+//exampples end
+
+
+//stages start
+
+.stages {
+}
+.stages__inner {
+}
+.stages__title {
+}
+.stages__content {
+}
+.stages__content-item {
+}
+.stages__big-number {
+}
+.stages__content-item-text {
+}
+.stages__item-text-t {
+}
+.stages__item-text-st {
+}
+
+//stages end
+
+
+// discount start
+
+.discount {
+}
+.discount__inner {
+}
+.discount__title {
+}
+.discount__content {
+}
+.discount__subtitle {
+}
+.discount__text {
+}
+
+//discount end
+
+//contact start
+
+.contact {
+}
+.contact__inner {
+}
+.contact__title {
+}
+.contact__content {
+}
+.contact__form {
+}
+.contact__socials {
+}
+.contact__subtitle-socials {
+}
+.contact__socials-items {
+}
+.contact__subtitle-email {
+}
+.contact__socials-item-e {
+}
+.contact__subtitle-phone {
+}
+.contact__socials-item-p {
+}
+
+//contact end
+
+//foter start
+
+.footer {
+}
+.footer__inner {
+}
+.footer__title {
+}
+.footer__rights {
+}
+.footer__socials {
+}
+.footer__socials-web {
+}
+.footer__socials-mail {
+}
+.footer__socials-tel {
+}
+
+//footer end
