@@ -100,6 +100,7 @@ ul{
         align-items: center;
     }
     .header__title{
+        
         text-align: start;
         font-family: 'forte';
         margin-bottom: 80px;
@@ -118,11 +119,10 @@ ul{
             top: -70px;
             left: -70px;
             z-index: -5;
-        }
-        
-
+        }   
     }
     .header__subtitle{
+        margin-top: 150px;
         width: 420px;
         line-height: 20px;
         font-size: 16px;
@@ -259,42 +259,97 @@ ul{
         margin-bottom: 70px;
     }
     &__content{
+        position: relative;
+        .slick-prev{
+            font-size: 0;
+            background-image: url(../img/arrow.jpg);
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 509px;
+            left: -100px; 
+            transition: all .3s;
+        }
+        .slick-prev:hover{
+            transform: scale(1.3, 1.3);
+        }
+        .slick-next{
+            position: absolute;
+            top: 500px;
+            right: -100px;
+            font-size: 0;
+            background-image: url(../img/arrow\ копия.png);
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            transition: all .3s;
+        }
+        .slick-next:hover{
+            transform: scale(1.3, 1.3);
+        }
+        .slick-dots{
+            display: flex;
+            font-size: 0;
+            max-width: 14.1%;
+            margin: 10px auto;
+            button{
+                background-color: #e3eaf0;
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                border: none;            
+            }
+            button:hover{
+                background-color: #c3d4e2 ;
+            }
+            li + li{
+                margin-left: 20px;
+            }      
+        }       
         &-item{
-            // width: 100%;
             display: flex !important;
             justify-content: space-around;
             margin: 0 auto;
-
             col-1{
-                margin-right: 10px;
-                
+                margin-right: 10px;           
             }
-
             col-2{
                 padding-left: 10px;
             }
-
             .examples__content-item-img{
                 margin-top: 20px;
                 img{
                     width: 620px;
-                }
-                
+                }          
             }
             .col + .col{
                 margin-left: 15px;
-            }
-           
+            }      
         }
     }
 }
-.examples__title {
-}
-.examples__content {
-}
-.examples__content-item {
-}
 
+// .slick-prev{
+//     font-size: 0;
+//     background-image: url(../img/arrow.jpg);
+//     width: 10px;
+//     height: 20px;
+    
+
+// }
+// .slick-next{
+//     font-size: 0;
+//     background-image: url(../img/arrow\ копия.png);
+//     width: 10px;
+//     height: 20px;
+
+// }
+.slick-arrow{
+    
+    background-color: #fff;
+    border: none;
+}
 //exampples end
 
 
