@@ -10,6 +10,10 @@ $(function () {
       
   
     });
+
+    $('.burger__btn').on('click', function(){
+      $('.header__menu__ul').slideToggle();
+  });
   
  
   
