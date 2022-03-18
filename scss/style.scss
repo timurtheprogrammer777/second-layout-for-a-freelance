@@ -391,6 +391,7 @@ ul{
     &__content{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin:0 50px 100px 50px;
         &-item{
             display: flex;
@@ -477,6 +478,7 @@ ul{
         display: flex;
         justify-content: space-between;
         width: 56%;
+        margin: 0 auto;
         &-form{
             .contact__input{
                 display: block;
@@ -564,6 +566,7 @@ ul{
 }
 
 .contact__inner{
+    
     background-image: url(../img/mails.png);
     background-position: right;
     background-repeat: no-repeat;
@@ -639,6 +642,11 @@ ul{
 //footer end
 
 // media start
+@media (max-width:1500px){
+    .slick-arrow{
+        display: none;
+    }
+}
 
 @media (max-width:1300px){
     .examples__content{
@@ -728,12 +736,83 @@ ul{
     }
 }
 
+@media(max-width:800px){
+    .stages__content{
+        flex-direction: column;
+        .stages__big-number{
+            font-size: 100px;
+        }
+        .stages__content-item-text{
+            width: 100%;
+            &-t{
+                max-width: 100%;
+            }
+            &-st{
+                max-width: none;
+            }
+        }
+    }
+    .discount{
+        &__content{
+            width: 70%;
+        }
+    }
+    .contact{
+        width: 50%;
+        margin: 0 auto;
+        &__inner{
+            background-image: none;
+        }
+        &__content{
+            flex-direction: column;
+            form{
+                input{
+                    width: 100%;
+                }
+            }
+            div + div{
+                margin-top: 50px;
+            }
+        }
+        .contact-style{
+            margin-bottom: -35px;
+        }
+    }
+    
+}
+@media (max-width:600px){
+    .footer{
+        &__inner{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 
+        }
+        &__title{
+            margin-bottom: 20px;
+            width: 50%;
+            
+        }
+        &__rights{
+            margin-bottom: 20px;
+            width: 50%;
+            
+        }
+        &__socials{
+            margin-bottom: 20px;
+        }
+    }
+}
 @media (max-width: 530px){
     .header__inner{
         .header__title{
         font-size: 40px;
         }   
+    }
+    .contact{
+        &__content{
+            width: 100%;
+        }
     }
     
 }
@@ -766,6 +845,18 @@ ul{
     .features__content{
         flex-direction: column;
     }
+    .stages__content{
+        text-align: center;
+        &-item{
+            flex-direction: column;
+        }
+    }
+    .discount{
+        &__content{
+            width: 90%;
+        }
+    }
+    
      
 }
 @media (max-width: 400px){
